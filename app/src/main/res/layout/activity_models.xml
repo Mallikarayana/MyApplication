@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lavander"
+    tools:context=".ModelsActivity">
+
+    <TextView
+        android:id="@+id/items_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/b612_mono_bold_italic"
+        android:paddingBottom="30dp"
+        android:text="Your Finds"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <ListView
+        android:id="@+id/items_lv"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_marginVertical="90dp"
+        android:divider="@color/white"
+        android:dividerHeight="2dp"
+        android:textAlignment="center" />
+
+</RelativeLayout>

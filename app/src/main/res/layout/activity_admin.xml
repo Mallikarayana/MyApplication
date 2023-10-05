@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavander"
+    tools:context=".AdminActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/yellowtail"
+        android:gravity="center_horizontal"
+        android:text="BEAUTY ZONE"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:id="@+id/caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:fontFamily="@font/b612_mono_bold_italic"
+        android:gravity="center_horizontal"
+        android:text="Admin Panel"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/category_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/caption"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/b612_mono_bold_italic"
+        android:text="category"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll1"
+        android:layout_below="@id/category_tv"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/catadd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_tv"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_new_bg2"
+            android:fontFamily="@font/b612_mono_bold_italic"
+            android:text="Add" />
+
+
+        <Button
+            android:id="@+id/catupdate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_tv"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_new_bg2"
+            android:fontFamily="@font/b612_mono_bold_italic"
+            android:text="update" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll2"
+        android:layout_below="@id/ll1"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/catdel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_tv"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_new_bg2"
+            android:fontFamily="@font/b612_mono_bold_italic"
+            android:text="Delete" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/subcategory_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/b612_mono_bold_italic"
+        android:text="sub category"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll3"
+        android:layout_below="@id/subcategory_tv"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/subcatadd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_tv"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_new_bg2"
+            android:fontFamily="@font/b612_mono_bold_italic"
+            android:text="Add" />
+
+
+        <Button
+            android:id="@+id/subcatupdate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_tv"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_new_bg2"
+            android:fontFamily="@font/b612_mono_bold_italic"
+            android:text="update" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll4"
+        android:layout_below="@id/ll3"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_tv"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_new_bg2"
+            android:fontFamily="@font/b612_mono_bold_italic"
+            android:text="Delete" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

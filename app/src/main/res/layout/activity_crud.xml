@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrudActivity"
+    android:background="@color/lavander"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Purpose_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/b612_mono_bold_italic"
+        android:text="Purpose"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/category_spinner"
+        android:background="@drawable/button_new_bg2"
+        android:backgroundTint="@color/lavander"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/subcategory_spinner"
+        android:background="@drawable/button_new_bg2"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/pid_edit1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/category_spinner"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_new_bg2"
+        android:fontFamily="@font/b612_mono_bold_italic"
+        android:hint="Enter ID"
+        android:inputType="text"
+        android:maxLength="80"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/name_edit2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/pid_edit1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_new_bg2"
+        android:fontFamily="@font/b612_mono_bold_italic"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:maxLength="80"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/status_edit3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/name_edit2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_new_bg2"
+        android:fontFamily="@font/b612_mono_bold_italic"
+        android:hint="Enter status"
+        android:inputType="text"
+        android:maxLength="80"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/status_edit3"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/upload_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_new_bg2"
+            android:fontFamily="@font/b612_mono_bold_italic"
+            android:padding="5dp"
+            android:text="Upload Image" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:id="@+id/preview_imageview"
+            android:src="@drawable/cetaphil"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="500dp"
+            android:background="@drawable/button_new_bg2"
+            android:fontFamily="@font/b612_mono_bold_italic"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="500dp"
+            android:background="@drawable/button_new_bg2"
+            android:fontFamily="@font/b612_mono_bold_italic"
+            android:text="update" />
+
+        <Button
+            android:id="@+id/del_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="500dp"
+            android:background="@drawable/button_new_bg2"
+            android:fontFamily="@font/b612_mono_bold_italic"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/read_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="500dp"
+            android:background="@drawable/button_new_bg2"
+            android:fontFamily="@font/b612_mono_bold_italic"
+            android:text="Read" />
+
+    </LinearLayout>
+
+</RelativeLayout>
